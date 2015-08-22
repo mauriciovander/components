@@ -44,9 +44,6 @@ class Base_Component {
         if (!is_null(filter_input_array(INPUT_COOKIE))) {
             $context['COOKIE'] = filter_input_array(INPUT_COOKIE);
         }
-        if (!is_null(filter_input_array(INPUT_SESSION))) {
-            $context['SESSION'] = filter_input_array(INPUT_SESSION);
-        }
         return $context;
     }
 
