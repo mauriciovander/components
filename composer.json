@@ -2,7 +2,8 @@
     "name": "mauriciovander/testpackage",
     "description": "PHP packaging test",
     "type": "library",
-    "keywords": [],
+    "keywords": [
+    ],
     "homepage": "https://github.com/mauriciovander/testpackage",
     "license": "MIT",
     "authors": [
@@ -15,13 +16,14 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "monolog/monolog":"1.16.0",
-        "guzzlehttp/guzzle":"6.0.2",
-        "phpunit/phpunit":"4.8.5"
+        "monolog/monolog": "1.16.0",
+        "guzzlehttp/guzzle": "6.0.2",
+        "phpunit/phpunit": "4.8.5",
+        "swiftmailer/swiftmailer":"v5.4.1"
     },
     "autoload": {
         "psr-4": {
-            "TestComponents": "src"
+            "TestComponents\\": "src"
         }
     }
 }
