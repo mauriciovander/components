@@ -1,0 +1,27 @@
+{
+    "name": "mauriciovander/testpackage",
+    "description": "PHP packaging test",
+    "type": "library",
+    "keywords": [],
+    "homepage": "https://github.com/mauriciovander/testpackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mauricio van der Maesen de Sombreff",
+            "email": "mauriciovander@gmail.com",
+            "homepage": "http://mauriciovander.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "monolog/monolog",
+        "guzzlehttp/guzzle",
+        "phpunit/phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Component1": "src/Component1"
+        }
+    }
+}
