@@ -9,6 +9,12 @@ new projects
 
 ## Instalation ##
 
+#### From composer packagist ####
+
+<code>composer require mauriciovander/testpackage dev-master</code>
+
+#### From Git ####
+
 1. clone this repository with 
 
   <code>git clone https://github.com/mauriciovander/testpackage.git</code>
