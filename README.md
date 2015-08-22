@@ -11,7 +11,7 @@ new projects
 
 1. clone this repository with 
 
-  git clone https://github.com/mauriciovander/testpackage.git
+  <code>git clone https://github.com/mauriciovander/testpackage.git</code>
 
 2. cd into testpackage
 3. install dependencies
