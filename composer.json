@@ -14,10 +14,10 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "monolog/monolog",
-        "guzzlehttp/guzzle",
-        "phpunit/phpunit"
+        "php": ">=5.5.0",
+        "monolog/monolog":"1.16.0",
+        "guzzlehttp/guzzle":"6.0.2",
+        "phpunit/phpunit":"4.8.5"
     },
     "autoload": {
         "psr-4": {
