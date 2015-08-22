@@ -6,7 +6,6 @@
  * from project base directory
  */
 
-error_reporting(E_ERROR);
 include __DIR__ . '/../vendor/autoload.php';
 
 class Component1Test extends PHPUnit_Framework_TestCase {
