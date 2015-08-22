@@ -18,9 +18,7 @@ new projects
 
   <code>composer install</code>
   
-4. run index.php as a server or create a virtualhost in your Apache/Nginx server 
-
-pointing the DocumentRoot to the _public_ folder
+4. run index.php as a server or create a virtualhost in your Apache/Nginx server pointing the DocumentRoot to the _public_ folder
 
   <code>php -S 127.0.0.1:8888 public/index.php</code>
   
