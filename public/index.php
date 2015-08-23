@@ -8,4 +8,56 @@
 
 include __DIR__ . '/../vendor/autoload.php';
 
-$component1 = new \TestComponents\Component1();
+$whoops = new \Whoops\Run;
+// for dev:
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+
+
+/*
+ * play with traits and observers
+ */
+interface ObserverInterface {
+
+    public function update();
+}
+
+trait ObserverTrait {
+
+    private $observers = [];
+
+    public function pushObserver(ObserverInterface $observer) {
+        $this->observers[] = $observer;
+    }
+
+    public function updateObservers() {
+        array_walk($this->observers, function(ObserverInterface $observer) {
+            $observer->update();
+        });
+    }
+
+}
+
+class Main {
+  use ObserverTrait;
+  
+  public function run() {
+    new \TestComponents\Component1();
+  }
+  
+}
+
+class Observer1 implements ObserverInterface {
+
+    public function update() {
+        echo '<p>' . __CLASS__ . '</p>';
+    }
+
+}
+
+$app = new Main();
+$app->pushObserver(new Observer1());
+$app->updateObservers();
+$app->run();
+
+
