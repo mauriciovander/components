@@ -19,7 +19,8 @@
         "monolog/monolog": "1.16.0",
         "guzzlehttp/guzzle": "6.0.2",
         "phpunit/phpunit": "4.8.5",
-        "swiftmailer/swiftmailer":"v5.4.1"
+        "swiftmailer/swiftmailer":"v5.4.1",
+        "filp/whoops": "^1.1"
     },
     "autoload": {
         "psr-4": {
